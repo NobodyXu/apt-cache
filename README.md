@@ -4,7 +4,22 @@ A docker image for caching apt packages based on squid-deb-proxy.
 
 # Usage
 
+## Pull from docker hub
+
+Simply run:
+
+```
+docker pull nobodyxu/apt-cache
+make run
+```
+
+to run the image as a container and also create a volume and publish the port 8000 for you.
+
+## Build it yourself
+
 Use `make` to build the image and `make run` to run the image as a container and also create a volume and publish the port 8000 for you.
+
+## Use the proxy
 
 Then add the following to `/etc/apt/apt.conf.d/01proxy` (create it if not exist) in your other containers or other machines:
 
