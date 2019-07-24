@@ -2,6 +2,7 @@ FROM debian:buster AS base
 
 RUN apt-get update && apt-get dist-upgrade -y
 RUN apt-get install -y --no-install-recommends apt-utils squid-deb-proxy avahi-utils
+RUN apt-get remove -y apt-utils
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir /var/cache/squid-deb-proxy
