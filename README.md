@@ -1,5 +1,8 @@
 # apt-cache
 
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/nobodyxu/apt-cache.svg)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/nobodyxu/apt-cache.svg)
+
 A docker image for caching apt packages based on squid-deb-proxy.
 
 # Usage
