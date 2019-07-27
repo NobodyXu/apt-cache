@@ -1,6 +1,6 @@
 .PHONY: build run
 build: 
-	docker build . --tag="apt-cache"
+	docker build . --tag="nobodyxu/apt-cache"
 
 run:
-	./run_cache.sh apt-caching apt-cache 8000 /var/cache/squid-deb-proxy
+	./run_cache.sh apt-caching nobodyxu/apt-cache 8000 /var/cache/squid-deb-proxy apt-cache

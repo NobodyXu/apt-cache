@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
-    echo "Usage: run_cache.sh (will-be)container_name image_name published_port volume_target_path"
+    echo "Usage: run_cache.sh (will-be)container_name image_name published_port volume_target_path volume_name"
     exit 1
 fi
 
@@ -18,7 +18,7 @@ fi
 docker run -d \
 	   --restart on-failure \
 	   -p "$3":"$3" \
-	   --mount "type=volume,src=$2,dst=$4" \
+	   --mount "type=volume,src=$5,dst=$4" \
 	   --name "$1" \
 	   "$2"
 
