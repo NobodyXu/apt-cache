@@ -3,7 +3,7 @@
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/nobodyxu/apt-cache.svg)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/nobodyxu/apt-cache.svg)
 
-A docker image for caching apt packages for debian, ubuntu official source, ubuntu PPA and canonical's parttern source based on squid-deb-proxy.
+A docker image for caching apt packages for debian, raspberry pi, ubuntu official source, ubuntu PPA and canonical's parttern source based on squid-deb-proxy.
 
 # Usage
 
