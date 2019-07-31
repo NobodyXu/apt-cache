@@ -15,6 +15,7 @@ RUN ln -s /dev/stderr /var/log/squid/access.log
 RUN ln -s /dev/stderr /var/log/squid/cache.log
 
 COPY start_squid.sh /root/
+COPY ubuntu-source.sh /etc/squid-deb-proxy/allowed-networks-src.acl.d/
 
 # Workaround the problem that multi-stage build cannot copy files between stages when 
 # usernamespace is enabled.
