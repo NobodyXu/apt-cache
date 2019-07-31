@@ -15,7 +15,7 @@ RUN ln -s /dev/stderr /var/log/squid/access.log
 RUN ln -s /dev/stderr /var/log/squid/cache.log
 
 COPY start_squid.sh /root/
-COPY *-src.acl /etc/squid-deb-proxy/mirror-dstdomain.acl.d/
+COPY mirror-dstdomain.acl.d/*-src.acl /etc/squid-deb-proxy/mirror-dstdomain.acl.d/
 
 # Workaround the problem that multi-stage build cannot copy files between stages when 
 # usernamespace is enabled.
