@@ -1,0 +1,14 @@
+# Additional distro
+## Ubutnu official source
+ports.ubuntu.com
+
+## Canonical's 'partner' repository
+archive.canonical.com
+
+## Ubuntu ppa
+## Get from:
+##     https://github.com/pmoust/squid-deb-proxy/blob/master/extra-sources.acl
+ppa.launchpad.net                       # Foreign PPA
+private-ppa.launchpad.net
+
+
