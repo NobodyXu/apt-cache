@@ -3,6 +3,8 @@
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/nobodyxu/apt-cache.svg)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/nobodyxu/apt-cache.svg)
 
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/nobodyxu/apt-cache/latest)
+
 A docker image for caching apt packages for (the following is in the whitelist `/etc/squid-deb-proxy/mirror-dstdomain.acl.d/`)
 
  - debian
